@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--Design colors-->
+    <color name="red_dark">#F06423</color>
+    <color name="red_dark2">#D85A1B</color>
+    <color name="cyan_light">#c9ebee</color>
+    <color name="cyan">#b5e3e7</color>
+    <color name="cyan_dark">#70BDC6</color>
+    <color name="navy_blue">#214258</color>
+    <color name="navy_blue_dark">#1C3A4E</color>
+    <color name="light_green">#78DC96</color>
+    <color name="light_blue">#55C8F0</color>
+    <color name="blue_black_dark">#13171d</color>
+    <color name="blue_black_light">#516179</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellow">#fff44f</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="white_transp_50">#50ffffff</color>
+    <color name="white60">#a0ffffff</color>
+    <color name="white_two">#efefef</color>
+    <color name="white_three">#ebebeb</color>
+    <color name="white_four">#e0e0e0</color>
+    <color name="white_five">#dadada</color>
+    <color name="blue">#031cd7</color>
+    <color name="black">#000000</color>
+    <color name="black_ten_percent">#1A000000</color>
+    <color name="order_date_color">#C7C7CC</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#333333</color>
+    <color name="dark_gray">#282a2b</color>
+    <color name="dark_grey_two">#191a1b</color>
+    <color name="warm_grey">#7f7f7f</color>
+    <color name="warm_grey_two">#9c9c9c</color>
+    <color name="warm_grey_three">#8b8b8b</color>
+    <color name="warm_grey_four">#979797</color>
+    <color name="dark_mint">#51c05c</color>
+    <color name="cornflower_blue_two">#4f62d7</color>
+    <color name="cornflower_blue_two_24">#3d4f62d7</color>
+    <color name="cornflower_blue_two_dark">#475bd4</color>
+    <color name="cornflower_blue_light_40">#64bec5f7</color>
+
+    <color name="dialog_divider">@color/white_three</color>
+    <color name="dialog_title_text">@color/dark_gray</color>
+    <color name="dialog_message_text">@color/warm_grey</color>
+    <color name="dialog_date_text">@color/warm_grey_two</color>
+    <color name="dialog_unread_text">@color/white</color>
+    <color name="dialog_unread_bubble">@color/dark_mint</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="gray_dark_transparent">#ae858585</color>
+    <color name="green">#38be55</color>
+    <color name="green_dark">#2da346</color>
+    <color name="file_item_lite_gray_color">#666666</color>
+    <color name="file_item_color_primary">#FF03A9F4</color>
+    <color name="file_item_outgoing_inbox_time">#4EB64F</color>
+    <color name="item_incoming_inbox_time">#919191</color>
+    <color name="file_item_outgoing_inbox_time_unread">#bbb</color>
+    <color name="user_on_off_line_status">@color/gray</color>
+    <color name="gray_transparent">#a6efefef</color>
+    <color name="settings_dark_grey">#2e2e2e</color>
+
+
+
+    <color name="edittext_hint_grey">#a6a6a5</color>
+    <color name="grey_text_login">#9d999a</color>
+    <color name="orange_btn">#FF9500</color>
+    <color name="grey_text_recovery_password">#818181</color>
+    <color name="blue_block_bg_color">#e0ebfd</color>
+    <color name="blue_text_color">#2f79f3</color>
+    <color name="green_text_color">#5aac44</color>
+    <color name="topbar_bg_color">#FFF7F7F7</color>
+    <color name="topbar_bg_color_loading">#A2A1A1</color>
+    <color name="settings_bg_color">#efeff4</color>
+    <color name="grey_block_border">#c8c7cc</color>
+    <color name="subtitle_grey">#6d6d72</color>
+    <color name="unactive_text_grey">#C8C8CE</color>
+    <color name="red_text">#ff3b30</color>
+    <color name="sent_inbox_background">#fcf0db</color>
+    <color name="inbox_selected_background">#10939498</color>
+    <color name="inbox_download_icon_background">#537edb</color>
+    <color name="drawer_icon_color">#a0a0a0</color>
+
+    <color name="out_inbox_bg_color">#fcefdb</color>
+    <color name="dialog_item_new_inbox_background">#f0f0f1</color>
+
+
+    <color name="unactive_text_grey2">#A1A1A6</color>
+    <color name="outdated_file_back_color">#A1A1A1</color>
+    <color name="progress_background">#55000000</color>
+    <color name="file_load_cancel_back_color">#809D999A</color>
+
+    <color name="white_transparent">#BCFFFFFF</color>
+
+    <color name="transparent_black_30">#30000000</color>
+    <color name="transparent_black">#00000000</color>
+    <color name="no_notifications_textview_back">#44000000</color>
+    <color name="launch_bg">#262626</color>
+
+    <!--    <color name="top_and_bottom_background_color">#F9F9F9</color>-->
+    <color name="top_and_bottom_background_color">#ffffff</color>
+    <color name="bottom_nav_bar_inactive_text_color">#828282</color>
+    <color name="bottom_nav_bar_active_text_color">#5E5E5E</color>
+
+    <color name="main_blue_color">#32A5FC</color>
+    <color name="reply_file_title">#5a6650</color>
+    <color name="main_green_color">#72D666</color>
+    <color name="main_green_dark_color">#27AE0C</color>
+    <color name="main_green_light_color">#80DB72</color>
+    <color name="main_red_color">#FF1F1F</color>
+    <color name="main_gray_light_color">#A9A9A9</color>
+    <color name="unblock_user_button_color">#4CD964</color>
+
+    <color name="notification_blue_item_back">#E0F2FF</color>
+    <color name="notification_red_item_back">#FFE0E0</color>
+
+    <color name="inbox_green_item_back">#E2FFC7</color>
+    <color name="inbox_green_item_back_dark">#B4E983</color>
+    <color name="inbox_gray_item_back">#F2F2F2</color>
+    <color name="inbox_gray_item_back_dark">#DEE7FF</color>
+    <color name="back_shadow_color">#CACECDCD</color>
+
+    <color name="thumbnail_time_view_back_color">#99000000</color>
+    <color name="orange_text">#FA950C</color>
+    <color name="block_color">#E24D4D</color>
+    <color name="inbox_item_date_back_color">#4D4D4D</color>
+    <color name="inbox_bubble_date_back_color">#664D4D4D</color>
+    <color name="rounded_corners_green_color">#4CD964</color>
+    <color name="rounded_corners_red_color">#E24D4D</color>
+    <color name="red_gradient_start_color">#FF6636</color>
+    <color name="red_gradient_end_color">#FF975C</color>
+
+    <color name="colorBottomNavigationAccent">#FF4081</color>
+    <color name="colorBottomNavigationActiveColored">#FFFFFF</color>
+    <color name="colorBottomNavigationDisable">#3A000000</color>
+    <color name="colorBottomNavigationInactive">#747474</color>
+    <color name="colorBottomNavigationInactiveColored">#50FFFFFF</color>
+    <color name="colorBottomNavigationNotification">#F63D2B</color>
+    <color name="colorBottomNavigationPrimary">#3F51B5</color>
+    <color name="colorBottomNavigationPrimaryDark">#303F9F</color>
+    <color name="colorBottomNavigationSelectedBackground">#17000000</color>
+    <color name="blackthirtypercent">#4D000000</color>
+    <color name="forgetpasswordnewcolor">#FF9500</color>
+    <color name="black_60">#99000000</color>
+
+    <color name="deadline_color">#FF4343</color>
+
+    <color name="action_regular_textview_color">#222222</color>
+    <color name="action_regular_icon_color">#686B70</color>
+    <color name="unread_track_color">#E3A03A</color>
+
+    <color name="color_reply_oval_gray_back">#c4c4c4</color>
+
+
+    <color name="media_preview_bar_background">#90010101</color>
+
+    <color name="project_status_offers_color">#82E3A9</color>
+    <color name="project_status_pause_completion_color">#F5CB68</color>
+    <color name="project_status_in_work_color">#98CCFB</color>
+    <color name="project_status_choose_worker_color">#53C67A</color>
+
+    <color name="project_actionbutton_play_color">#4D82E3A9</color>
+    <color name="project_actionbutton_pause_color">#FFE1B3</color>
+    <color name="project_actionbutton_color">#4DDBDBDB</color>
+    <color name="project_title_color">#1E1E1E</color>
+    <color name="project_deadline_color">#A8A8A8</color>
+    <color name="project_price_color">#36AC3B</color>
+    <color name="project_divider_color">#E6E6E6</color>
+    <color name="project_counter_color">#5D5D5D</color>
+    <color name="order_messages_counter_color">#FFAD34</color>
+    <color name="order_title_color">#1A1A1A</color>
+
+    <color name="connects_progress_background">#1F78BB</color>
+    <color name="connects_progress_background_stroke">#74B7FF</color>
+    <color name="connects_progress">#98D3FF</color>
+
+</resources>

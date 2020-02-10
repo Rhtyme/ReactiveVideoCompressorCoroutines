@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mToolbar"
+        android:layout_gravity="top|start|end"
+        android:layout_marginBottom="70dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/contentMainVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvVideoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Video.mp4"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.exoplayer2.ui.PlayerView
+                        android:id="@+id/mainVideoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:show_buffering="when_playing"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1">
+
+                    <TableRow android:padding="3dp">
+
+                        <TextView android:text="@string/duration" />
+
+                        <TextView android:id="@+id/tvDurationValue"
+                            tools:text="23 seconds" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="3dp">
+
+                        <TextView android:text="@string/file_name" />
+
+                        <TextView android:id="@+id/tvFileName"
+                            tools:text="some.mp4" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="3dp">
+
+                        <TextView android:text="@string/file_size" />
+
+                        <TextView android:id="@+id/tvFileSize"
+                            tools:text="5 mb" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowQuality"
+                        android:padding="3dp">
+
+                        <TextView android:text="@string/quality" />
+
+                        <Spinner android:id="@+id/spinnerQuality" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowResolution"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp">
+
+                        <TextView android:text="@string/resolution" />
+
+                        <Spinner android:id="@+id/spinnerResolution" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowFormat"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp">
+
+                        <TextView android:text="@string/format" />
+
+                        <Spinner android:id="@+id/spinnerFormat" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainShareDeleteContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/mainDeleteBtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_delete_red"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_marginEnd="50dp"/>
+
+                <ImageView
+                    android:id="@+id/mainShareBtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_share_green"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/compressedVideoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <View
+                    android:background="@color/back_shadow_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/compressedTvVideoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compressed_file"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.exoplayer2.ui.PlayerView
+                        android:id="@+id/compressedVideoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:show_buffering="when_playing"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:stretchColumns="1">
+
+                    <TableRow android:padding="3dp">
+
+                        <TextView android:text="@string/duration" />
+
+                        <TextView android:id="@+id/compressedTvDurationValue"
+                            tools:text="23 seconds" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="3dp">
+
+                        <TextView android:text="@string/file_name" />
+
+                        <TextView android:id="@+id/compressedTvFileName"
+                            tools:text="some.mp4" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="3dp">
+
+                        <TextView android:text="@string/file_size" />
+
+                        <TextView android:id="@+id/compressedTvFileSize"
+                            tools:text="5 mb" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/progressCompress"
+        android:visibility="gone"
+        tools:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/circular_progress_with_percentage"/>
+
+    <Button
+        android:id="@+id/processButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="@string/process" />
+
+</RelativeLayout>

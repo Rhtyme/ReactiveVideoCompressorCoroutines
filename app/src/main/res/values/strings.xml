@@ -1,0 +1,555 @@
+<resources>
+    <string name="app_name">ReactiveVideoCompressor</string>
+
+    <!--Toolbar menus-->
+    <string name="clear">Очистить</string>
+    <string name="cut">Вырезать</string>
+    <string name="copy">Скопировать</string>
+    <string name="paste">Вставить</string>
+    <string name="delete">Удалить</string>
+    <string name="share">Поделиться</string>
+    <string name="copied_message">Сообщение скопировано</string>
+
+    <!--Login-->
+    <string name="login">Логин</string>
+    <string name="email">Электронная почта</string>
+    <string name="password">Пароль</string>
+
+    <!--Login Validation-->
+    <string name="invalid_email_password">Пожалуйста, укажите действительный адрес электронной почты и пароль.</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link" translatable="false">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link" translatable="false">"market://details?id="</string>
+
+    <!--feed-->
+    <string name="title">Kwork Messenger</string>
+
+    <string name="hint_enter_a_message">Введите сообщение …</string>
+
+    <!--Errors-->
+    <string name="error_title">Ой</string>
+    <string name="error_message">Не удалось загрузить элементы, попробуйте еще раз!</string>
+    <string name="error_reload">Перезагрузить</string>
+    <string name="error_code_social_need_email">В данных социальной сети не представлен email. Привяжите аккаунт на сайте.</string>
+    <string name="file_access_error">Приложение не имеет доступа к выбранному файлу</string>
+    <string name="vk_sdk_error_msg">Ошибка авторизации через Вконтакте</string>
+    <string name="signin_error">Ошибка авторизации</string>
+    <string name="signin_error_title">Не удается войти</string>
+    <string name="signin_error_body">Неверный логин или пароль.\nЕсли вы забыли пароль, его можно восстановить</string>
+    <string name="error_in_url">error=</string>
+    <string name="error_happened_will_be_fixed_soon">Извините, в приложении обнаружена ошибка, мы исправим ошибку как можно скорее</string>
+    <string name="response_error_400">Неверный запрос</string>
+    <string name="response_error_401">Необходима авторизация</string>
+    <string name="response_error_403">С вашего IP-адреса были обнаружены подозртельные обращения к сайту Kwork. В целях безопасности произошла блокировка IP.\nЕсли вы считаете, что это ошибка, то напишите в службу поддержки Kwork об этой ситуации на info@kwork.ru, указав в обращении свой IP-адрес %1$s. Мы постараемся решить проблему как можно скорее. </string>
+    <string name="response_error_404">Метод API не найден</string>
+    <string name="response_error_408">Истекло время ожидания</string>
+    <string name="response_error_500">Внутренняя ошибка сервера</string>
+    <string name="response_error_503">Сервис ндоступен</string>
+    <string name="response_error_504">Шлюз не отвечает</string>
+    <string name="response_error_unknown">Произошла ошибка</string>
+    <string name="filter_count_orders_error">Не удалось получить количество заказов</string>
+
+
+    <string name="attachment_retry">Попробовать снова</string>
+    <string name="status">Статус</string>
+    <string name="phone">Телефон</string>
+
+    <string name="al_file" translatable="false">:file</string>
+    <string name="al_gallery" translatable="false">:gallery</string>
+    <string name="al_camera" translatable="false">:camera</string>
+
+    <!--permissions-->
+    <string name="contact_permission">"Для доступа к Контактам необходимо разрешение "</string>
+    <string name="storage_permission">Для доступа к Хранилищу необходимо разрешение</string>
+    <string name="read_sms_permission">Для доступа к чтению SMS необходимо разрешение</string>
+    <string name="location_permission">Для доступа к Геолокации необходимо разрешение</string>
+    <string name="phone_state_permisssion">Для доступа к Состоянию Телефона необходимо разрешение</string>
+    <string name="phone_call_permission">Для доступа к Телефонным звонкам необходимо разрешение</string>
+    <string name="phone_camera_permission">Для доступа к Камере необходимо разрешение</string>
+    <string name="record_audio">Требуется разрешение на аудиозапись</string>
+    <string name="camera_audio_permission">Для доступа к Камере и записи аудио необходимо разрешение</string>
+
+    <string name="contact_permission_not_granted">Разрешение не было предоставлено для контактов</string>
+    <string name="storage_permission_not_granted">Разрешение не было предоставлено для хранилища</string>
+    <string name="read_sms_permission_not_granted">Разрешение не было предоставлено для чтения</string>
+    <string name="location_permission_not_granted">Разрешение не было предоставлено для геолокации</string>
+    <string name="phone_state_permission_not_granted">Разрешение не было предоставлено для состояние телефона</string>
+    <string name="phone_call_permission_not_granted">Разрешение не было предоставлено для телефонных звонков</string>
+    <string name="phone_camera_permission_not_granted">Разрешение не было предоставлено для камеры</string>
+    <string name="record_audio_permission_not_granted">Разрешение не было предоставлено для аудио записи</string>
+    <string name="audio_or_camera_permission_not_granted">Разрешение не было предоставлено для камеры и аудио записи</string>
+
+    <string name="contact_permission_granted">Контакты Разрешение предоставлено</string>
+    <string name="storage_permission_granted">Разрешения на хранение предоставлены</string>
+    <string name="read_sms_permission_granted">Чтение SMS Разрешения предоставлены</string>
+    <string name="location_permission_granted">Разрешения на местоположение были предоставлены</string>
+    <string name="phone_state_permission_granted">Состояние телефона Разрешения предоставлены</string>
+    <string name="phone_call_permission_granted">Разрешен телефонный звонок</string>
+    <string name="phone_camera_permission_granted">Разрешение камеры было предоставлено</string>
+    <string name="record_audio_permission_granted">Аудио запись разрешений была предоставлена</string>
+    <string name="phone_camera_and_audio_permission_granted">Камера и аудио-разрешения были предоставлены</string>
+    <string name="mobicom_max_attachment_warning">Достигнут максимальный лимит вложений</string>
+    <string name="mobicom_select_attachment_text">Выберите хотя бы одно вложение</string>
+
+
+    <string name="ok_alert">OK</string>
+    <string name="undo">Отменить</string>
+    <string name="dialog_archived">Диалог помещен в список удаленных</string>
+    <string name="default_media_location_folder">Kwork</string>
+    <string name="forgot_password_question">Забыли пароль?</string>
+    <string name="email_or_login">Email или Логин</string>
+    <string name="log_in">Авторизоваться</string>
+    <string name="or">или</string>
+    <string name="social_login">Войти через</string>
+    <string name="restore_password">Восстановить пароль</string>
+    <string name="enter_email_for_account">Введите адрес электронной почты, на который был зарегистрирован аккаунт</string>
+    <string name="restore">Восстановить</string>
+    <string name="online">онлайн</string>
+    <string name="offline">оффлайн</string>
+    <string name="password_success_text">Письмо с инструкциями по сбросу пароля отправлено</string>
+    <string name="check_internet_connection">Проверьте интернет-соединение</string>
+    <string name="enter_your_login_or_email">Введите адрес электронной почты или логин</string>
+    <string name="enter_your_email">Введите адрес электронной почты</string>
+    <string name="app_language">ЯЗЫК ПРИЛОЖЕНИЯ</string>
+    <string name="russian" translatable="false">Русский</string>
+    <string name="english" translatable="false">English</string>
+    <string name="personal_data">ЛИЧНЫЕ ДАННЫЕ</string>
+    <string name="edit_data">Сохранить данные</string>
+    <string name="notifications_upper_case">УВЕДОМЛЕНИЯ</string>
+    <string name="notify_about_messages">Уведомлять о сообщениях</string>
+    <string name="notify_about_orders">Уведомлять о заказах</string>
+    <string name="exit">Выход</string>
+
+    <string name="support">Поддержка</string>
+    <string name="notifications">Уведомления</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_profile">Настройки профиля</string>
+    <string name="navigation_drawer_open">Открыть меню</string>
+    <string name="navigation_drawer_close">Закрыть меню</string>
+    <string name="close">Закрыть</string>
+    <string name="edit_profile_label">Вы можете добавить несколько строк о себе. Они будут видны всем, кто откроет ваш профиль.</string>
+    <string name="name">Имя</string>
+    <string name="name_en">Имя (на английском)</string>
+    <string name="details">Информация о продавце</string>
+    <string name="details_en">Информация о продавце (на английском)</string>
+    <string name="captcha_response_cancelled">Ответ Capthca отменен</string>
+    <string name="mute_user">Отключить уведомления от пользователя</string>
+    <string name="unmute_user">Включить уведомления от пользователя</string>
+    <string name="filesize_limit">Выбранный файл должен быть меньше 4 мб</string>
+
+    <string name="mimetype_not_found">MimeType не найден</string>
+    <string name="personal_data_en">ЛИЧНЫЕ ДАННЫЕ (НА АНГЛИЙСКОМ)</string>
+    <string name="name_holder_ru">Имя: %1$s</string>
+    <string name="name_holder_en">Имя (на английском): %1$s</string>
+    <string name="details_holder">Информация о продавце: %1$s</string>
+    <string name="details_holder_en">Информация о продавце (на английском): %1$s</string>
+    <string name="edit_photo">Редактировать фото</string>
+    <string name="fullname_hint">Ваше полное имя</string>
+    <string name="fullname_hint_en">Ваше имя (на английском)</string>
+    <string name="description_hint">Ваше описание продавца</string>
+    <string name="description_hint_en">Ваше описание продавца (на английском)</string>
+    <string name="mark_all_as_read">ОТМЕТИТЬ ВСЕ КАК ПРОЧИТАННОЕ</string>
+    <string name="click_top_open">Кликните, чтобы открыть в браузере</string>
+    <string name="no_new_notifications">Нет новых уведомлений</string>
+    <string name="search">Поиск</string>
+    <string name="message">Сообщение</string>
+    <string name="edited">Изменено</string>
+    <string name="edit_message">Редактировать сообщение</string>
+    <string name="are_you_sure_to_delete_message">Вы уверены, что хотите удалить это сообщение?</string>
+    <string name="searched_user_not_found">Указанный пользователь не найден!</string>
+    <string name="file_can_not_be_attached_bcz_exceeds_limit">Файл %1$s не может быть прикреплен, так как его размер превышает %2$d Мб</string>
+    <string name="empty_files_can_not_be_attached">Невозможно прикрепить пустые файлы</string>
+    <string name="searched_word_not_found">Искомое слово не найдено</string>
+    <string name="searched_navigation_item_of">%1$d из %2$d</string>
+
+    <string name="kwork_informer_chanel_name">Канал уведомлений KWORK</string>
+
+    <string name="kwork_informer_im_chanel">Канал собщений KWORK</string>
+
+    <string name="im_chanel">Канал уведомлений для личных сообщений</string>
+
+    <string name="user">Пользователь</string>
+    <string name="sent_you_private_message">отправил вам личное сообщение.</string>
+    <string name="you_have_new_notification">У вас есть 1 новое уведомление</string>
+    <string name="you_have">У вас есть</string>
+    <string name="new_notifications">новые уведомления</string>
+    <string name="new_notifications_title">Новое уведомление:</string>
+    <string name="new_notification_in_kwork">Новое уведомления в кворке</string>
+    <string name="new_notification_from_user">Новое уведомления от пользователя</string>
+    <string name="new_notification_in_order">Новое уведомления в заказе</string>
+    <string name="new_notification_in_stage">Уведомление в поэтапном заказе</string>
+    <string name="new_notification_in_portfolio">Новое уведомления в портфолио</string>
+    <string name="new_notification_offer">Новое уведомления на бирже</string>
+    <string name="new_notification_regular">Новое уведомление: </string>
+    <string name="new_message_push">Новое сообщение</string>
+    <string name="you_got_new_notifs">У вас есть новые сообщения на KWORK</string>
+    <string name="you_have_no_conversation_yet">У вас пока нет\nдиалогов</string>
+    <string name="you_have_no_conversation_yet_desc">Сообщения от пользователей\nпоявятся тут.\nНачать общение можно на сайте</string>
+    <string name="only_latin_characters">Разрешены только латинские символы</string>
+    <string name="unread_messages">Непрочитанные сообщения</string>
+    <string name="change_chat_background">ФОНОВОЕ ИЗОБРАЖЕНИЕ ДЛЯ ЧАТА</string>
+    <string name="chat_bg_blur_level">УРОВЕНЬ РАЗМЫТИЯ ФОНОВОГО ИЗОБРАЖЕНИЯ ЧАТА</string>
+    <string name="choose_from_gallery">Выбрать из галереи</string>
+    <string name="choose_photo">Выбрать фото</string>
+    <string name="set_background">Установить фон</string>
+    <string name="preview_text_dummy_1">Привет! Иногда фоновое изображение выглядит лучше с размытием.</string>
+    <string name="preview_text_dummy_2">Ok, спасибо!</string>
+    <string name="blur">Размытие</string>
+    <string name="bg_preview">Предпросмотр фона</string>
+    <string name="blur_radius">Радиус размытия:</string>
+    <string name="bg_image_set">Фоновое изображение успешно установленно</string>
+    <string name="something_wrong">Сообщение нельзя отредактировать, так как оно уже прочитано</string>
+    <string name="chat_background">Фон для чатов</string>
+    <string name="chat_bg_has_been_set">Фоновое изображение для чатов установлено</string>
+    <string name="change_bg">Изменить фон</string>
+    <string name="user_profile">Профиль пользователя</string>
+    <string name="information">Информация</string>
+    <string name="profile">Профиль</string>
+    <string name="can_not_edit_message_read">Не удалось отредактировать сообщение, сообщение уже прочитано.</string>
+    <string name="can_not_delete_message_read">Не удалось удалить сообщение, сообщение уже прочитано.</string>
+    <string name="yes">Да</string>
+
+    <string name="no">Нет</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="data_saved">Данные сохранены</string>
+    <string name="support_username">Служба поддержки</string>
+    <string name="this_action_is_not_available_in_offline">Это действие недоступно в оффлайн режиме</string>
+    <string name="saved">Сохранено</string>
+    <string name="no_connection">Нет сети</string>
+    <string name="unable_to_resolve_host">Unable to resolve host</string>
+    <string name="share_file">Поделиться файлом</string>
+    <string name="title_offer_kwork_new">Предложение индивидуального кворка</string>
+    <string name="title_offer_kwork_custom_request">Запрос индивидуального кворка</string>
+    <string name="services">Услуги</string>
+    <string name="price">Стоимость</string>
+    <string name="title_offer_kwork_payer_cancel">Предложение индивидуального кворка отклонено покупателем</string>
+    <string name="title_offer_kwork_payer_cancel_you">Вы отклонили предложение индивидуального кворка</string>
+    <string name="title_offer_kwork_worker_cancel">Предложение индивидуального кворка отменено продавцом</string>
+    <string name="title_offer_kwork_worker_cancel_you">Вы отменили предложение индивидуального кворка</string>
+    <string name="title_offer_kwork_done">Заказ создан</string>
+    <string name="offer_kwork_id_done">Заказ %1$d создан</string>
+
+    <string name="budget">Бюджет:</string>
+    <string name="time_days">Срок (дней):</string>
+
+    <string name="support_caps">ПОДДЕРЖКА</string>
+    <string name="tech_support">Техническая поддержка</string>
+    <string name="chat_settings">НАСТРОЙКИ ЧАТА</string>
+    <string name="deleted_chats">Удаленные чаты</string>
+    <string name="no_deleted_chats">Нет удаленных чатов</string>
+    <string name="restore_chat">Разархивировать чат</string>
+    <string name="chat_unarchived_success">Чат успешно разархивирован</string>
+    <string name="attachment_type_selector__audio">Аудио</string>
+    <string name="attachment_type_selector__contact">Контакт</string>
+    <string name="attachment_type_selector__camera">Камера</string>
+
+    <string name="take_picture">Сделать снимок</string>
+    <string name="load_from_gallery">Загрузить из галереи</string>
+
+    <!-- attachment_type_selector -->
+    <string name="attachment_type_selector__location">Местоположение</string>
+    <string name="attachment_type_selector__gif">GIF</string>
+    <string name="attachment_type_selector__gallery">Галерея</string>
+    <string name="attachment_type_selector__file">Файл</string>
+    <string name="can_not_attach_more_than_ten_files">Нельзя прикреплять более десяти файлов!</string>
+    <string name="can_not_handle_attached_files">Не удается отправить прикрепленные файлы</string>
+    <string name="you_need_to_provide_permissions_to_use_kwork">Чтобы использовать функционал приложения, Вам необходимо предоставить все запрашиваемые разрешения.</string>
+    <string name="no_chats">Нет чатов</string>
+    <string name="read">Прочитанное</string>
+    <string name="unread">Непрочитанное</string>
+    <string name="unarchive">Разархивировать</string>
+
+    <string name="kwork_order_single_view_info_title">
+          <![CDATA[
+          Вы работаете с этим пользователем над заказом: <br><b>%1$s</b><br><br> Для того, чтобы сообщения и файлы не потерялись, переписка ведется в этом заказе
+          ]]>
+    </string>
+    <string name="draft"><![CDATA[<font color="%1$d">Черновик: </font>]]></string>
+    <string name="kwork_order_multiple_view_info_title">Вы работаете с этим пользователем над несколькими заказами. Для того, чтобы сообщения и файлы не потерялись, переписка будет вестись внутри заказа. Выберите нужный заказ, чтобы написать сообщение</string>
+    <string name="go_to_order">Перейти к заказу</string>
+    <string name="no_messages">Здесь еще нет сообщений</string>
+    <string name="no_app_to_view_this_file">У вас нет приложения для просмотра этого файла</string>
+    <string name="can_not_open_this_file">Не удается открыть этот файл</string>
+
+    <string name="kwork_captcha_url">kwork.ru/captcha_only#response=</string>
+    <string name="vk_auth_blank">https://oauth.vk.com/blank.html</string>
+    <string name="code_in_url">code=</string>
+
+    <string name="message_deleted">Сообщение удалено пользователем</string>
+    <string name="no_data">Нет данных</string>
+    <string name="block_user">Заблокировать</string>
+    <string name="block">Заблокировать</string>
+    <string name="unblock_user_text">Разблокировать</string>
+    <string name="user_blocked">Пользователь заблокирован</string>
+    <string name="user_unblocked">Пользователь разблокирован</string>
+    <string name="user_blocked_by_you">Пользователь заблокирован вами</string>
+    <string name="only_emoji_messages_not_supported">Сообщения, содержащие только смайлы, не поддерживаются</string>
+    <string name="typing">печатает</string>
+    <string name="typing_with_dots">печатает…</string>
+    <string name="messages_after_unblocking">Сообщения и вложения будут доступны после разблокировки пользователя</string>
+    <string name="is_typing">Печатает…</string>
+    <string name="mark_unread_for_blocked">Действие не может быть выполнено, так как пользователь заблокирован</string>
+    <string name="waiting_for_network">Ожидание сети</string>
+    <string name="connection_">Соединение…</string>
+    <string name="updating_">Обновление…</string>
+    <string name="back">Назад</string>
+    <string name="refresh">Обновить</string>
+    <string name="reply_label">Ответить</string>
+    <string name="app_purpose">Для чего это приложение</string>
+    <string name="app_purpose_text">Kwork Информер - это приложение для общения в чате с клиентами и фрилансерами, а также получения важных уведомлений в аккаунте.
+                                    \n\nИнформер не заменяет собой сайт, но позволяет всегда быть в курсе событий на Kwork.</string>
+    <string name="understand">Понятно</string>
+    <string name="push_sent">Сообщение отправлено</string>
+    <string name="dialog_refreshed">Диалог обновлен.</string>
+    <string name="syncing">Синхронизация</string>
+    <string name="syncing_with_the_server">Синхронизация с сервером…</string>
+    <string name="i_accept">Я ознакомился и принимаю</string>
+    <string name="accept_offerta"><u>лицензионным договором-офертой</u></string>
+    <string name="attention">Внимание!</string>
+    <string name="you_must_accept_oferta">Вы должны принять лицензионный договор-оферту!</string>
+    <string name="yandex_metrika_api_key">1718fb1b-2cff-4a73-a036-b3b25f7af344</string>
+    <string name="you_accept_while">Авторизуясь, вы соглашаетесь с</string>
+    <string name="login2">Войти</string>
+    <string name="blocked_users">Чёрный список</string>
+    <string name="no_blocked_users">Нет заблокированных контактов</string>
+    <string name="unblock">Разблокировать</string>
+    <string name="failed_to_load">Ошибка загрузки</string>
+    <string name="failed_to_send_message">Ошибка отправки!</string>
+    <string name="new_notificationon_kwork">Новое уведомление на Kwork</string>
+    <string name="personal_offer_declined">Продавец отменил предложение индивидуального кворка</string>
+    <string name="kwork_new_offer">Продавец предложил индивидуальный кворк</string>
+    <string name="e_mail">Email</string>
+    <string name="password_recovery">Восстановление\nпароля</string>
+    <string name="email_sent">Письмо\nотправлено</string>
+    <string name="we_sent_email">Мы выслали вам на email письмо с инструкцией по восстановлению пароля</string>
+    <string name="push_notifications">Push-уведомления</string>
+    <string name="chats">Чаты</string>
+    <string name="exchange">Биржа</string>
+    <string name="orders">Заказы</string>
+    <string name="me">Я</string>
+    <string name="kwork_ru">Kwork.ru</string>
+    <string name="messages_sound">Звук сообщения</string>
+    <string name="fill_settings">Заполните информацию о себе, которую увидят другие пользователи</string>
+    <string name="link_to_your_profile">Ссылка на ваш профиль</string>
+    <string name="about_me">О себе</string>
+    <string name="geo_position">МЕСТОПОЛОЖЕНИЕ</string>
+    <string name="country">Страна</string>
+    <string name="city">Город</string>
+    <string name="timezone">Часовой пояс</string>
+    <string name="choose_country">Выберите страну</string>
+    <string name="choose_city">Выберите город</string>
+    <string name="choose_timezone">Выберите часовой пояс</string>
+    <string name="name_label">Имя пользователя</string>
+    <string name="about_label">О себе</string>
+    <string name="experience">Опыт</string>
+    <string name="rating">Рейтинг</string>
+    <string name="read_more">Читать полностью</string>
+    <string name="hide">Скрыть</string>
+    <string name="messages">Сообщения</string>
+    <string name="notifications_list_empty_yet">Список уведомлений пока пуст</string>
+    <string name="today">Сегодня</string>
+    <string name="loading">Загрузка…</string>
+    <string name="load_list_failed">Не удалось загрузить список</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_recipient">Выберите получателя</string>
+    <string name="i_am_buyer">Я покупатель</string>
+    <string name="i_am_seller">Я продавец</string>
+    <string name="seller">Продавец</string>
+    <string name="buyer">Покупатель</string>
+    <string name="order_type_all">Все</string>
+    <string name="order_type_active">В работе</string>
+    <string name="order_type_cancelled">Отменено</string>
+    <string name="order_type_delivered">На проверке</string>
+    <string name="order_type_completed">Выполнено</string>
+    <string name="order_type_missing_data">Предоставьте данные</string>
+    <string name="order_type_unpaid_worker">Ожидание оплаты</string>
+    <string name="order_type_unpaid_payer">Требуется оплата</string>
+    <string name="no_orders_yet">У вас пока нет заказов</string>
+    <string name="order_status_not_started">Не начат</string>
+    <string name="edit">Редактировать</string>
+    <string name="resend">Отправить еще раз</string>
+
+    <string name="needs_reauth_password_changed">Пароль от аккаунта был изменен.\nНеобходима авторизация.</string>
+
+    <string-array name="inbox_outgoing_text_click_dialog_array">
+        <item>Редактировать</item>
+        <item>Удалить</item>
+    </string-array>
+    <string-array name="inbox_outgoing_file_click_dialog_array">
+        <item>Удалить</item>
+    </string-array>
+
+    <string-array name="inbox_outgoing_resend_dialog_array">
+        <item>Отправить еще раз</item>
+        <item>Удалить</item>
+    </string-array>
+
+    <string name="package_name">ru.kwork.app</string>
+    <string name="one_account_allowed">В приложении разрешена только одна учетная запись!</string>
+    <string name="attachment_contains_files_more_than_30mb">Вложение содержит файлы, размер которых превышает предельный размер загружаемого файла-30 Мб</string>
+    <string name="order_status_cancel_request">Запрос отмены</string>
+    <string name="order_status_arbitrage">Арбитраж</string>
+    <string name="on_tab">Во вкладке</string>
+
+    <!-- Order Events names-->
+    <string name="buyer_instructions_provided">Покупатель предоставил инструкции по заказу</string>
+    <string name="cron_cancellation">Заказ отменен автоматически</string>
+    <string name="cron_stop">Заказ остановлен автоматически</string>
+    <string name="fox_buyer_requirements">Предоставьте данные для выполнения заказа</string>
+    <string name="kwork_dotcom_neworder">Новый заказ</string>
+    <string name="kwork_dotcom_orderdelivered">Заказ сдан на проверку</string>
+    <string name="kwork_dotcom_orderdeliveryreject">Заказ отправлен на доработку</string>
+    <string name="kwork_dotcom_orderdone">Покупатель подтвердил выполнение заказа</string>
+    <string name="kwork_dotcom_orderupdate">Новые сообщения в заказе</string>
+    <string name="mutual_cancellation_request">Продавец предложил отмену заказа</string>
+    <string name="order_deadline_hit">Истёк срок выполнения заказа</string>
+    <string name="payer_cancellation">Покупатель отменил заказ</string>
+    <string name="payer_cancellation_request">Покупатель запросил отмену заказа</string>
+    <string name="payer_new_order_report">Продавец предоставил отчет по заказу</string>
+    <string name="payer_send_tips">Получен бонус от пользователя</string>
+    <string name="payer_stop">Покупатель остановил заказ</string>
+    <string name="payer_stop_request">Покупатель запросил остановку заказа</string>
+    <string name="seller_cancellation">Продавец отменил заказ</string>
+    <string name="worker_extra_suggestion">Продавец предложил дополнительные опции</string>
+    <string name="worker_need_order_report">У вас есть заказы по которым нужно отправить отчеты</string>
+    <string name="worker_stop">Продавец остановил заказ</string>
+    <string name="worker_stop_request">Продавец предложил остановить заказ</string>
+    <string name="notif_in_order">Уведомление в заказе</string>
+    <string name="buyer_extra_order">Покупатель оплатил дополнительные опции</string>
+    <string name="buyer_extra_suggestion_accept">Покупатель оплатил дополнительные опции</string>
+    <string name="buyer_extra_suggestion_reject">Покупатель отказался от доп. опций</string>
+
+    <string name="kwork_continued">Кворк снят с паузы</string>
+    <string name="kwork_paused">Кворк поставлен на паузу</string>
+    <string name="kwork_moder_active">Кворк одобрен</string>
+    <string name="kwork_moder_rejected">Кворк отправлен на доработку</string>
+    <string name="want_new_offer">Новые предложения на бирже</string>
+    <string name="portfolio_new_like">Новые оценки ваших работ</string>
+    <string name="kwork_dotcom_stagedelivered">Этап сдан на проверку</string>
+    <string name="kwork_dotcom_stagedeliveryreject">Этап отправлен на доработку</string>
+    <string name="kwork_dotcom_stagedone">Покупатель подтвердил выполнение этапа</string>
+    <string name="need_reserve_pay_stage">Для продолжения заказа внесите оплату за этап</string>
+    <string name="stage_arbitrage">Этап переведен в арбитраж</string>
+    <string name="inbox_custom_request">Получен запрос на индивидуальный кворк</string>
+    <string name="inbox_offer_kwork">Продавец предложил индивидуальный кворк</string>
+    <string name="inbox_payer_decline_offer">Покупатель отказался от покупки индивидуального кворка</string>
+    <string name="inbox_worker_decline_offer">Продавец отменил предложение индивидуального кворка</string>
+    <string name="new_wants">Новые запросы на услуги</string>
+    <string name="want_connects_added">Добавлены коннекты для Биржи</string>
+    <string name="want_select_worker">Нужно выбрать исполнителя заказа</string>
+    <string name="accept_stop">Запрос на остановку заказа принят</string>
+    <string name="admin_cancellation">Администратор отменил заказ</string>
+    <string name="admin_cancel_inprogress">Возвращение заказа модератором в работу</string>
+    <string name="admin_done_inprogress">Возвращение заказа модератором в работу</string>
+    <string name="admin_stop">Администратор остановил заказ</string>
+    <string name="buyer_buy_packages">Покупка дополнительных пакетов</string>
+    <string name="buyer_upgrade_package">Пакет был повышен</string>
+    <string name="fox_accept_cancellation">Запрос на отмену заказа принят</string>
+    <string name="kwork_accept_portfolio">Добавьте файл в портфолио</string>
+    <string name="kwork_dotcom_orderfeedback">Покупатель оставил отзыв по заказу</string>
+    <string name="order_arbitrage">Заказы переведены в арбитраж</string>
+    <string name="order_arbitrage_decision">Решение по арбитражу</string>
+    <string name="order_rating_answer">Получен ответ на отзыв</string>
+    <string name="virtual_extra_remove">Отмена доп. опций модератором</string>
+    <string name="worker_extra_remove">Покупка доп. опций отменена</string>
+    <string name="add_new_stage">Добавлен новый этап</string>
+    <string name="pay_stage_reserved">Оплата под этап зарезервирована</string>
+    <string name="stage_changed">Условия этапного заказа были изменены</string>
+
+
+    <string name="registration">Регистрация</string>
+    <string name="reg_message">В рамках политики безопасности регистрация в Kwork возможна через Интернет-браузер.</string>
+    <string name="go_next">Продолжить</string>
+
+    <string name="connects_counter_format">%1$d/%2$d</string>
+
+    <string name="save_to_pictures">Сохранить в Загрузки</string>
+    <string name="download">Скачать</string>
+    <string name="orders_sent_to_arbitrage">Заказы переведены в арбитраж</string>
+    <string name="order_sent_to_arbitrage">Заказ переведен в арбитраж</string>
+    <string name="browser">Браузер</string>
+    <string name="no_notifications">Непрочитанных уведомлений нет</string>
+    <string name="all_is_ok">Все ОК!</string>
+    <string name="file">Файл</string>
+    <string name="you">Вы</string>
+    <string name="file_expired">Срок хранения файла истёк</string>
+
+    <string name="transition_dialogName" translatable="false">transition_dialogName</string>
+    <string name="transition_dialogAvatar" translatable="false">transition_dialogAvatar</string>
+    <string name="transition_previewImage" translatable="false">transition_previewImage</string>
+    <string name="share_warning_text"><![CDATA[Общение и заказы за пределами Kwork несут высокий риск мошенничества! <span style="color:red">Передача контактных данных запрещена</span> <span style="color:blue"><u>правилами сайта</u></span>.]]></string>
+    <string name="commission_warning_text"><![CDATA[<span style="color:red">Не следует обсуждать в переписке с покупателем комиссию сервиса. Комиссия Kwork обеспечивает развитие проекта и безопасность сделок. Каждая успешная сделка в системе увеличивает ваши продажи.</span>]]></string>
+    <string name="files">Файлы</string>
+    <string name="photo">Фотография</string>
+    <string name="video">Видео</string>
+    <string name="getting_offers">Сбор предложений</string>
+    <string name="from">до</string>
+    <string name="filters">Фильтры</string>
+    <string name="archive">Архив</string>
+    <string name="create_project">Создать проект</string>
+    <string name="share_when_dialog_has_active_orders">Вы работаете с этим пользователем над заказом. Для отправки сообщения перейдите в заказ.</string>
+    <string name="nice_work">Отличная работа!</string>
+    <string name="all_notifications_have_been_read">Все уведомления прочитаны :)</string>
+    <string name="no_active_orders_yet">У вас пока нет активных заказов</string>
+    <string name="create_kwork">Создайте кворк \nили откликнитесь на проект\n в разделе «Биржа»</string>
+    <string name="go_to_catalog">Перейдите в каталог кворков\nи оформите заказ</string>
+    <string name="go_to_catalog_action">Перейти в каталог</string>
+    <string name="create_kwork_action">Создать кворк</string>
+    <string name="go_to_exchange">Перейти на биржу</string>
+    <string name="go_to_website">Перейти на сайт</string>
+    <string name="no_messages2">Сообщений нет</string>
+    <string name="write_first_message">Напишите первое сообщение,\nначните общаться прямо сейчас!</string>
+    <string name="social_login_error_text">Ошибка авторизации через социальную сеть</string>
+    <string name="rate_kwork_text">Оцените Kwork Информер</string>
+    <string name="your_review_help">Ваш отзыв поможет стать\nнам еще лучше</string>
+    <string name="support_dialog_title">У вас возникли трудности?</string>
+    <string name="support_dialog_text">Опишите проблему, с которой вы столкнулись</string>
+    <string name="support_dialog_positive">В чат поддержки</string>
+
+    <string name="google_play_dialog_title">Отлично!</string>
+    <string name="google_play_dialog_text">Мы рады, что вам нравится наше приложение. Оцените его в Google Play. Мы читаем все отзывы, чтобы делать приложение лучше.</string>
+    <string name="google_play_dialog_positive">Оценить в Google Play</string>
+    <string name="report_bug">Сообщить о проблеме</string>
+    <string name="rate">Оценить</string>
+    <string name="item_not_available">Не загружено</string>
+    <string name="album_all_images_videos">Все изображения / видео файлы</string>
+    <string name="file_info_selected">Выбрано %1$d / 10</string>
+
+
+    <string name="quality">Quality:</string>
+    <string name="duration">Duration:</string>
+    <string name="file_size">File size:</string>
+    <string name="resolution">Resolution:</string>
+    <string name="format">Format:</string>
+    <string name="process">Process</string>
+    <string name="file_name">File name:</string>
+    <string name="percentage">%1$d %%</string>
+
+    <string name="compressed_file_size">Compressed File size:</string>
+
+    <string name="compressed_file">Compressed File:</string>
+
+    <string name="compressed_file_size_percent">%1$s, compressed: %2$d %%</string>
+
+    <string-array name="quality_options">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="format_options">
+        <item>mp4</item>
+        <item>3gp</item>
+        <item>mp3</item>
+    </string-array>
+
+    <string-array name="resolution_options">
+        <item>2560x1440 (1440p)</item>
+        <item>1920x1080 (1080p)</item>
+        <item>1280x720 (720p)</item>
+        <item>800×600</item>
+        <item>640×480</item>
+    </string-array>
+
+</resources>

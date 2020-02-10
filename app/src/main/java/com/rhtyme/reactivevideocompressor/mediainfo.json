@@ -1,0 +1,54 @@
+{
+  "bitrate": 20146,
+  "duration": 54990,
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "metadata": {
+    "creation_time": "2019-12-21T18:42:05.000000Z",
+    "location-eng": "+55.7324+048.7115/",
+    "major_brand": "mp42",
+    "location": "+55.7324+048.7115/",
+    "com.android.version": "9",
+    "minor_version": "0",
+    "compatible_brands": "isommp42"
+  },
+  "path": "/storage/emulated/0/DCIM/Camera/VID_20191221_214107.mp4",
+  "rawInformation": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from \u0027/storage/emulated/0/DCIM/Camera/VID_20191221_214107.mp4\u0027:\n  Metadata:\n    major_brand     : mp42\n    minor_version   : 0\n    compatible_brands: isommp42\n    creation_time   : 2019-12-21T18:42:05.000000Z\n    location        : +55.7324+048.7115/\n    location-eng    : +55.7324+048.7115/\n    com.android.version: 9\n  Duration: 00:00:54.99, start: 0.000000, bitrate: 20146 kb/s\n    Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuvj420p(pc, smpte170m), 1920x1080, 19991 kb/s, SAR 1:1 DAR 16:9, 29.95 fps, 29.97 tbr, 90k tbn, 180k tbc (default)\n    Metadata:\n      creation_time   : 2019-12-21T18:42:05.000000Z\n      handler_name    : VideoHandle\n    Stream #0:1(eng): Audio: aac (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 95 kb/s (default)\n    Metadata:\n      creation_time   : 2019-12-21T18:42:05.000000Z\n      handler_name    : SoundHandle\nAt least one output file must be specified\n",
+  "startTime": 0,
+  "streams": [
+    {
+      "averageFrameRate": "29.95",
+      "bitrate": 19991,
+      "codec": "h264",
+      "codecTimeBase": "180k",
+      "format": "yuvj420p",
+      "fullCodec": "h264 (avc1 / 0x31637661)",
+      "fullFormat": "yuvj420p(pc, smpte170m)",
+      "height": 1080,
+      "index": 0,
+      "metadata": {
+        "creation_time": "2019-12-21T18:42:05.000000Z",
+        "handler_name": "VideoHandle"
+      },
+      "realFrameRate": "29.97",
+      "sidedata": {},
+      "timeBase": "90k",
+      "type": "video",
+      "width": 1920
+    },
+    {
+      "bitrate": 95,
+      "channelLayout": "stereo",
+      "codec": "aac",
+      "fullCodec": "aac (mp4a / 0x6134706d)",
+      "index": 1,
+      "metadata": {
+        "creation_time": "2019-12-21T18:42:05.000000Z",
+        "handler_name": "SoundHandle"
+      },
+      "sampleFormat": "fltp",
+      "sampleRate": 48000,
+      "sidedata": {},
+      "type": "audio"
+    }
+  ]
+}

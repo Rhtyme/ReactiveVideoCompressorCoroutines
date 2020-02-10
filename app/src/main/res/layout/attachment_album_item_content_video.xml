@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.rhtyme.reactivevideocompressor.utils.widgets.SquareCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_album_content_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/al_camera"
+            android:scaleType="centerCrop" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/check_box"
+            android:visibility="gone"
+            android:buttonTint="@color/main_blue_color"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="6dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_reply_video_file_icon_blue"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+
+        <include
+            android:id="@+id/viewMoreOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="3dp"
+            layout="@layout/layout_ic_more_vertical" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/dark_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/item_not_available"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+</com.rhtyme.reactivevideocompressor.utils.widgets.SquareCardView>
