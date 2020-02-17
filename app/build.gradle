@@ -17,7 +17,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.rhtyme.reactivevideocompressor"
+        applicationId "com.rhtyme.coroutinevideocompressor"
         minSdkVersion 24
         targetSdkVersion 29
         versionCode 1

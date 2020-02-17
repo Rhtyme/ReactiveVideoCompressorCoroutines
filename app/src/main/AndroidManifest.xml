@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rhtyme.reactivevideocompressor">
+    package="com.rhtyme.coroutinevideocompressor">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name=".ReactiveVideoCompressor"
+        android:name="com.rhtyme.coroutinevideocompressor.CoroutineVideoCompressor"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
 
-        <activity android:name=".view.main.MainActivity">
+        <activity android:name="com.rhtyme.coroutinevideocompressor.view.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +25,7 @@
 
         </activity>
 
-        <activity android:name=".view.editvideo.EditVideoDialogActivity" />
+        <activity android:name="com.rhtyme.coroutinevideocompressor.view.editvideo.EditVideoDialogActivity" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
@@ -33,14 +33,14 @@
             />
 
         <provider
-            android:name=".utils.provider.ReactiveVCompressorProvider"
+            android:name="com.rhtyme.coroutinevideocompressor.utils.provider.CoroutineVCompressorProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true"
             android:multiprocess="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/reactive_v_compressor_provider" />
+                android:resource="@xml/coroutine_v_compressor_provider" />
         </provider>
 
     </application>
