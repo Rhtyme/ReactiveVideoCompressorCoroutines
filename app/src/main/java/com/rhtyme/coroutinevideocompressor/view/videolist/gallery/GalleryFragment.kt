@@ -15,6 +15,7 @@ import com.rhtyme.coroutinevideocompressor.view.editvideo.EditVideoDialogActivit
 import com.rhtyme.coroutinevideocompressor.viewmodel.GalleryViewModel
 import kotlinx.android.synthetic.main.fragment_gallery.*
 import org.koin.android.ext.android.inject
+import timber.log.Timber
 
 class GalleryFragment: BaseFragment() {
 
@@ -50,7 +51,9 @@ class GalleryFragment: BaseFragment() {
             }
         })
 
-        galleryViewModel.loadGallery()
+        val job = galleryViewModel.loadGallery()
+        job.start()
+        Timber.tag(SEQUENCE_TAG).d("*** onViewCreated after loadGallery(): ${System.nanoTime()}")
     }
 
 
@@ -106,6 +109,8 @@ class GalleryFragment: BaseFragment() {
     companion object {
 
         const val TITLE = "Gallery"
+
+        const val SEQUENCE_TAG = "SEQUENCE_TAG"
 
         fun getInstance(bundle: Bundle?): GalleryFragment {
             val fragment =  GalleryFragment()

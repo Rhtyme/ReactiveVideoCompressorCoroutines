@@ -129,52 +129,6 @@ class AlbumAdapter(
         }
     }
 
-    private class ImageHolder internal constructor(
-        itemView: View, private val hasCamera: Boolean,
-        private val mItemClickListener: OnItemClickListener?,
-        private val mCheckedClickListener: OnCheckedClickListener?
-    ) : MediaViewHolder(itemView), View.OnClickListener {
-
-        val mIvImage: ImageView
-        val mCheckBox: AppCompatCheckBox
-
-        private val mLayoutLayer: FrameLayout
-
-        init {
-
-            mIvImage = itemView.findViewById(R.id.iv_album_content_image)
-            mCheckBox = itemView.findViewById(R.id.check_box)
-            mLayoutLayer = itemView.findViewById(R.id.layout_layer)
-
-            itemView.setOnClickListener(this)
-            mCheckBox.setOnClickListener(this)
-            mLayoutLayer.setOnClickListener(this)
-        }
-
-        override fun setData(albumFile: AlbumFile) {
-            mCheckBox.isChecked = albumFile.isChecked
-
-            Glide.with(mIvImage.getContext())
-                .load(albumFile.path)
-                .into(mIvImage)
-
-            mLayoutLayer.visibility = if (albumFile.isDisable) View.VISIBLE else View.GONE
-        }
-
-        override fun onClick(v: View) {
-            if (v === itemView) {
-                val camera = if (hasCamera) 1 else 0
-                mItemClickListener?.onItemClick(v, adapterPosition - camera)
-            } else if (v === mCheckBox) {
-                val camera = if (hasCamera) 1 else 0
-                mCheckedClickListener?.onCheckedClick(mCheckBox, adapterPosition - camera)
-            } else if (v === mLayoutLayer) {
-                val camera = if (hasCamera) 1 else 0
-                mItemClickListener?.onItemClick(v, adapterPosition - camera)
-            }
-        }
-    }
-
     private class VideoHolder internal constructor(
         itemView: View, private val hasCamera: Boolean,
         needMoreOptions: Boolean,

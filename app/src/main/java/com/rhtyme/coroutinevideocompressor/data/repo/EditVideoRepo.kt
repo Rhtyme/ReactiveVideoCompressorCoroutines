@@ -17,7 +17,7 @@ import java.lang.Exception
 class EditVideoRepo(val galleryRepo: GalleryRepo) {
 
     @Throws(Exception::class)
-    suspend fun  fetchMediaInformation(path: String): MediaInformation {
+    fun  fetchMediaInformation(path: String): MediaInformation {
         var mediaInfo: MediaInformation? = null
         mediaInfo = FFmpeg.getMediaInformation(path)
         if (mediaInfo != null) {
@@ -28,7 +28,7 @@ class EditVideoRepo(val galleryRepo: GalleryRepo) {
     }
 
     @Throws(Exception::class)
-    suspend fun startCompression(
+    fun startCompression(
         context: Context,
         config: CompressionConfig,
         progressListener: (ProgressiveResult.Progress<AlbumFile>) -> Unit

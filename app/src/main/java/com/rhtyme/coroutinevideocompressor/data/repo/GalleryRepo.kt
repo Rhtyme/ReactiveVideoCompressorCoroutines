@@ -43,7 +43,7 @@ class GalleryRepo {
         MediaStore.Video.Media.DURATION
     )
 
-    private suspend fun scanAllVideoFiles(
+    private fun scanAllVideoFiles(
         mContext: Context,
         albumFolderMap: MutableMap<String, AlbumFolder>,
         allFileFolder: AlbumFolder
@@ -122,7 +122,7 @@ class GalleryRepo {
      * Get all the multimedia files, including videos and pictures.
      */
     @Throws(Resources.NotFoundException::class)
-    suspend fun getAllMedia(context: Context): List<AlbumFile> {
+    fun getAllMedia(context: Context): List<AlbumFile> {
         val albumFolderMap = HashMap<String, AlbumFolder>()
         val allFileFolder = AlbumFolder()
         allFileFolder.isChecked = true
@@ -149,7 +149,7 @@ class GalleryRepo {
     }
 
     @Throws(Exception::class)
-    suspend fun scanCacheFolderForCompressedVideos(context: Context): List<AlbumFile> {
+    fun scanCacheFolderForCompressedVideos(context: Context): List<AlbumFile> {
         val outputFolder = context.externalCacheDir
         if (outputFolder == null || !outputFolder.exists()) {
             throw Exception("can not write to SD card")

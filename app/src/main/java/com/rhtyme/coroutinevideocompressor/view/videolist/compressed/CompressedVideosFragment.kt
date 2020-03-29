@@ -67,7 +67,6 @@ class CompressedVideosFragment: BaseFragment() {
 
         albumAdapter.setAddClickListener(object : OnItemClickListener {
             override fun onItemClick(view: View, position: Int) {
-//                getPresenter().clickCamera(view)
 
             }
 
@@ -76,14 +75,11 @@ class CompressedVideosFragment: BaseFragment() {
         })
         albumAdapter.setCheckedClickListener(object : OnCheckedClickListener {
             override fun onCheckedClick(button: CompoundButton, position: Int) {
-//                Timber.tag(ATTACH_TAG).d("onCheckedClick: $position")
                 albumAdapter.mAlbumFiles.getOrNull(position)?.let {}
             }
         })
         albumAdapter.setItemClickListener(object : OnItemClickListener {
             override fun onItemClick(view: View, position: Int) {
-//                getPresenter().tryPreviewItem(position)
-
                 val album = albumAdapter.mAlbumFiles.getOrNull(position)?: return
                 context?.let {
                     startActivity(EditVideoDialogActivity.getInstanceIntent(album, it, false))
