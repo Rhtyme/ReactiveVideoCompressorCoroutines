@@ -2,6 +2,7 @@ package com.rhtyme.coroutinevideocompressor.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import com.arthenica.mobileffmpeg.MediaInformation
 import com.rhtyme.coroutinevideocompressor.data.repo.EditVideoRepo
 import com.rhtyme.coroutinevideocompressor.model.*
@@ -20,24 +21,21 @@ class EditVideoViewModel(context: Context, val editVideoRepo: EditVideoRepo) :
     val compressInformationLiveData = MutableLiveData<Resource<AlbumFile>>()
 
 
-    fun fetchMediaInformation(path: String) = launch {
+    fun fetchMediaInformation(path: String) = viewModelScope.launch(coroutineContextProvider.ui()) {
         mediaInformationLiveData.postValue(Resource.Loading())
         try {
             Timber.d("")
-            val info = withContext(Dispatchers.IO) {
+            val info = withContext(coroutineContextProvider.io()) {
                 editVideoRepo.fetchMediaInformation(path)
             }
-            Timber.tag(EDIT_VIDEO_VM_T)
-                .d("fetchMediaInformation, onSuccess: ${info.toStringT()}")
             mediaInformationLiveData.postValue(Resource.Success(info))
 
         } catch (e: Exception) {
-            Timber.tag(EDIT_VIDEO_VM_T).d("fetchMediaInformation, onError: $e")
             mediaInformationLiveData.postValue(Resource.Error(e.message ?: "", 0))
         }
     }
 
-    fun startCompression(context: Context, config: CompressionConfig) = launch {
+    fun startCompression(context: Context, config: CompressionConfig) = viewModelScope.launch(coroutineContextProvider.ui()) {
         if (compressInformationLiveData.value is Resource.Loading) {
             return@launch
         }
@@ -45,13 +43,11 @@ class EditVideoViewModel(context: Context, val editVideoRepo: EditVideoRepo) :
         compressInformationLiveData.value = Resource.Loading()
 
         try {
-            val result = withContext(Dispatchers.IO) {
+            val result = withContext(coroutineContextProvider.io()) {
                 editVideoRepo.startCompression(context, config, publishProgress)
             }
-            Timber.tag(EDIT_VIDEO_VM_T).d("startCompression, onComplete: $result")
             compressInformationLiveData.postValue(Resource.Success(result.result))
         } catch (e: Exception) {
-            Timber.tag(EDIT_VIDEO_VM_T).d("startCompression, onError: $e")
             compressInformationLiveData.postValue(Resource.Error("onError: $e", 1))
         }
     }

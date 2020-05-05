@@ -57,7 +57,7 @@ ext {
     //for test implementations versions
     // App dependencies
     androidXVersion = '1.1.0'
-    androidXTestCoreVersion = '1.2.0-beta01'
+    androidXTestCoreVersion = '1.2.0'
     androidXTestExtKotlinRunnerVersion = '1.1.1-beta01'
     androidXTestRulesVersion = '1.2.0-beta01'
     androidXAnnotations = '1.0.1'

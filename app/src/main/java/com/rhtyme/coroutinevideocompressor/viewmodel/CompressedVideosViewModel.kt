@@ -2,10 +2,10 @@ package com.rhtyme.coroutinevideocompressor.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import com.rhtyme.coroutinevideocompressor.data.repo.GalleryRepo
 import com.rhtyme.coroutinevideocompressor.model.AlbumFile
 import com.rhtyme.coroutinevideocompressor.model.Resource
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import timber.log.Timber
@@ -17,14 +17,14 @@ class CompressedVideosViewModel(context: Context, val galleryRepo: GalleryRepo) 
 
     val albumFilesLiveData = MutableLiveData<Resource<List<AlbumFile>>>()
 
-    fun loadCompressedVideos() = launch {
+    fun loadCompressedVideos() = viewModelScope.launch(coroutineContextProvider.ui()) {
         val context = weakContext.get() ?: return@launch
         if (albumFilesLiveData.value is Resource.Loading) {
             return@launch
         }
         albumFilesLiveData.postValue(Resource.Loading())
         try {
-            val albumFiles = withContext(Dispatchers.IO) {
+            val albumFiles = withContext(coroutineContextProvider.io()) {
                 galleryRepo.scanCacheFolderForCompressedVideos(context)
             }
             Timber.tag(COMPRESSED_TAG).d("loadCompressedVideos onSuccess: ${albumFiles.size}")

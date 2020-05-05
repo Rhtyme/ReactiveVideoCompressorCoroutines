@@ -11,9 +11,9 @@ import com.rhtyme.coroutinevideocompressor.model.AlbumFolder
 import com.rhtyme.coroutinevideocompressor.utils.provider.CoroutineVCompressorProvider
 import timber.log.Timber
 import java.io.File
-import java.util.*
+import com.rhtyme.coroutinevideocompressor.testing.*
 
-
+@OpenForTesting
 class GalleryRepo {
 
     /**

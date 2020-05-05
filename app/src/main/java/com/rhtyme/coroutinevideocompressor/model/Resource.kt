@@ -2,6 +2,7 @@ package com.rhtyme.coroutinevideocompressor.model
 
 import android.content.Context
 import com.rhtyme.coroutinevideocompressor.R
+import com.rhtyme.coroutinevideocompressor.testing.OpenForTesting
 
 sealed class Resource<T>(
     val data: T? = null,
@@ -30,7 +31,7 @@ sealed class Resource<T>(
     override fun toString(): String {
         var size = 0
         if (data is Collection<*>) {
-            size = data.size
+            size = (data as? Collection<*>)?.size ?: 0
         }
         return "Resource(data.size=$size, errorMessage=$errorMessage, errorCode=$errorCode, class=${javaClass})"
     }

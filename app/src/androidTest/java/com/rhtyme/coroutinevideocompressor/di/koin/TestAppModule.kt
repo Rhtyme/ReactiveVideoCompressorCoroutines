@@ -1,4 +1,4 @@
-package com.rhtyme.coroutinevideocompressor.di
+package com.rhtyme.coroutinevideocompressor.di.koin
 
 import android.content.Context
 import com.rhtyme.coroutinevideocompressor.data.Constants
